@@ -11,11 +11,11 @@ PKG_MAINTAINER:=Beomjun Kang <kals323@gmail.com>
 PKG_VERSION:=0.1.0
 PKG_RELEASE:=1
 
-LUCI_TITLE:=SafeShield
+LUCI_TITLE:=SafeShield Web UI
 LUCI_URL:=https://github.com/Beomjun/luci-app-safeshield
 LUCI_DESCRIPTION:=Lightweight, DNS-based protection for OpenWrt — block ads and phishing sites with a powerful Web UI.
 LUCI_DEPENDS:=+luci-base +jsonfilter +safeshield
 
-include $(TOPDIR)/feeds/luci/luci.mk
+include ../../luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
