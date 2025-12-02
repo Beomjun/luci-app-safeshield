@@ -1,0 +1,17 @@
+{
+	"admin/services/safeshield": {
+		"title": "SafeShield",
+		"action": {
+			"type": "view",
+			"path": "safeshield/overview"
+		},
+		"depends": {
+			"acl": [
+				"luci-app-safeshield"
+			],
+			"uci": {
+				"safeshield": true
+			}
+		}
+	}
+}
