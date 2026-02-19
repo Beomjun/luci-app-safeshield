@@ -16,6 +16,6 @@ LUCI_URL:=https://github.com/Beomjun/luci-app-safeshield
 LUCI_DESCRIPTION:=Lightweight, DNS-based protection for OpenWrt — block ads and phishing sites with a powerful Web UI.
 LUCI_DEPENDS:=+luci-base +jsonfilter +safeshield
 
-include ../../luci.mk
+include $(TOPDIR)/feeds/luci/luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
